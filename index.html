@@ -1,21 +1,51 @@
-<font color="red" size="60">Velkommen til GameXChange</font>
-<center>
-    <img src="banner2.png" class="herobilde"> <!--  -->
-</center>
-<h2 style="margin-top: -50px;">Velkommen til GameXchange.no!</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameXChange</title>
+    <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar At the top of the page  -->
+    <header>
+        <div class="navbar">
+            <a href="">Hjem (du er her)</a>
+            <a href="høydepunkter.html">Høydepunkter</a>
+            <a href="login.html">Kjøp</a>
+            <a href="Ny kunde? Registrer her"></a>
+            <a href="omoss.htm1">Om oss og kontakt</a>
+            <a href="allproducts.html">Alle produkter</a>
+            <div onclick="darkmode()">darkmode()</div>
+        </div>
+    </header>
+
+    <!-- Main content of the page -->
+    <main>
+        <div>
+            <h1>Velkommen til GameXChange</h1>
+            <div class="hero">
+                <img src="/frontend/assets/images/banner/banner2.png" class="herobilde"> 
+            </div>
+        </div>
+        
+        
+    </main>
+</body>
+
+</html>
+
+
 <marquee behavior="" direction="">
     <h3>Ditt nettsted for kjøp og salg av brukte spill! </h3>
 </marquee>
-<div id="links" style="position: auto; bottom:0; margin-top: 200px;">
-    <a style="margin-right: 10px" href="">Hjem (du er her)</a><a style="margin-right: 10px"
-        href="høydepunkter.html">Høydepunkter</a><a style="margin-right: 10px" href="login.html">Kjøp</a><a
-        style="margin-right: 10px" href="Ny kunde? Registrer her"></a><astyle="margin-right: 10px" href="omoss.htm1">Om
-        oss og kontakt</a><a href="allproducts.html">Alle produkter</a>
-        <div onclick="darkmode()">darkmode()</div>
-</div>
+
+
 
 <h2>Dagbok</h2>
-<marquee behavior="" direction="">SKriv en hilsen!</marquee>
+<marquee behavior="" direction="">Skriv en hilsen!</marquee>
 <form id="comment-form">
     <input type="text" id="comment" />
     <button type="submit">Send</button>
@@ -23,7 +53,7 @@
 <div id="comment-section"></div>
 
 
-<link rel="stylesheet" type="text/css" href="style.css">
+
 
 <script>
     function darkmode() {
