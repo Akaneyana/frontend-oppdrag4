@@ -6,65 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameXChange</title>
     <link rel="stylesheet" href="frontend/css/style.css">
+    <link rel="stylesheet" href="frontend/css/styleIndex.css">
 </head>
 
 <body>
     <!-- Navbar At the top of the page  -->
     <header>
         <div class="navbar">
-            <a href="">Hjem (du er her)</a>
-            <a href="høydepunkter.html">Høydepunkter</a>
-            <a href="login.html">Kjøp</a>
-            <a href="Ny kunde? Registrer her"></a>
-            <a href="omoss.htm1">Om oss og kontakt</a>
-            <a href="allproducts.html">Alle produkter</a>
-            <div onclick="darkmode()">darkmode()</div>
-        </div>
-    </header>
-
-    <!-- Main content of the page -->
-    <main>
-        <div>
-            <h1>Velkommen til GameXChange</h1>
-            <div class="hero">
-                <img src="/frontend/assets/images/banner/banner2.png" class="herobilde"> 
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="nav-links">
+                <a href="" class="bold">Hjem</a>
+                <a href="frontend/html/høydepunkter.html">Høydepunkter</a>
+                <a href="frontend/html/login.html">Kjøp</a>
+                <a href="frontend/html/register.html">Ny kunde? Registrer her</a>
+                <a href="frontend/html/kontakt.html">Om oss og kontakt</a>
+                <a href="frontend/html/allproducts.html">Alle produkter</a>
+                <div onclick="darkmode()">darkmode()</div>
             </div>
         </div>
-        
-        
+    </header>
+    
+    <!-- Main content of the page -->
+    <main>
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Velkommen til GameXChange</h1>
+            </div>
+            <img src="/frontend/assets/images/banner/banner2.png" id="herobilde" alt="Banner Image">
+        </div>
+
+
+
+
+        <h2>Dagbok</h2>
+        Skriv en hilsen!
+        <form id="comment-form">
+            <input type="text" id="comment" />
+            <button type="submit">Send</button>
+        </form>
+        <div id="comment-section"></div>
+
+        <h3>Ditt nettsted for kjøp og salg av brukte spill! </h3>
     </main>
+
+    <script src="backend/script.js"></script>
 </body>
 
 </html>
-
-
-<marquee behavior="" direction="">
-    <h3>Ditt nettsted for kjøp og salg av brukte spill! </h3>
-</marquee>
-
-
-
-<h2>Dagbok</h2>
-<marquee behavior="" direction="">Skriv en hilsen!</marquee>
-<form id="comment-form">
-    <input type="text" id="comment" />
-    <button type="submit">Send</button>
-</form>
-<div id="comment-section"></div>
-
-
-
-
-<script>
-    function darkmode() {
-        /* funker ikke :() */
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-    }
-    document.getElementById('comment-form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        const input = document.getElementById('comment').value;
-        document.getElementById('comment-section').innerHTML += `<p>${input}</p>`;
-    });
-
-</script>

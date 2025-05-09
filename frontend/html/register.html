@@ -1,9 +1,38 @@
-<link rel="stylesheet" href="style.css">
-<h1>Velkommen til GameXchange</h1>
-<input type="text" name="username" id="">
-<input type="text" name="password" id="">
-<button>SEnd</button>
+<!DOCTYPE html>
+<html lang="en">
 
-<br><br><br><br><br><br><hr><br>
-<a style="margin-right: 10px" href="hjem.html">Hjem (du er her)</a><a style="margin-right: 10px" href="høydepunkter.html">Høydepunkter</a><a style="margin-right: 10px" href="login.html">Kjøp</a><a style="margin-right: 10px" href="Ny kunde? Registrer her"></a><astyle="margin-right: 10px" href="omoss.htm1">Om oss og kontakt</a><a href="allproducts.html">Alle produkter</a>
-<br><br><hr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navbar At the top of the page  -->
+    <header>
+        <div class="navbar">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="nav-links">
+                <a href="../../index.html">Hjem</a>
+                <a href="høydepunkter.html">Høydepunkter</a>
+                <a href="login.html">Kjøp</a>
+                <a href="register.html">Ny kunde? Registrer her</a>
+                <a href="kontakt.html">Om oss og kontakt</a>
+                <a href="allproducts.html" class="bold">Alle produkter</a>
+                <div onclick="darkmode()">darkmode()</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content of the page -->
+    <main>
+        <h1>Velkommen til GameXchange</h1>
+        <input type="text" name="username" id="">
+        <input type="text" name="password" id="">
+        <button>Send</button>
+    </main>
+    <script src="../../backend/script.js"></script>
+</body>
+
+</html>

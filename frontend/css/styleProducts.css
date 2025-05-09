@@ -1,0 +1,84 @@
+main h1{
+    text-align: center;
+
+    padding-top: 3vh;
+}
+
+.prod {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 2rem 0; 
+    padding: 1rem;
+    background-color: rgba(50, 50, 50, 0.8); 
+    border-radius: 0.5rem; 
+    flex-wrap: wrap; 
+}
+
+.prod img { 
+    height: auto; 
+    width: 25rem;
+    
+}
+
+.prod div {
+    flex: 1; 
+    padding: 0 1rem; 
+}
+
+.prod h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.prod p {
+    margin: 0.5rem 0;
+}
+
+.prod button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.prod button:hover {
+    background-color: #45a049; 
+}
+
+/* Makes it so  */
+@media (max-width: 768px) { 
+    .prod {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .prod img {
+        margin-bottom: 1rem; 
+        margin-right: 0; 
+    }
+
+    .prod div {
+        padding: 0; 
+    }
+
+    .prod button {
+        align-self: center; 
+        margin-top: 1rem;
+    }
+}
+
+
+.products-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto; 
+    width: 100%; 
+}

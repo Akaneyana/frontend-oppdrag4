@@ -1,26 +1,50 @@
-
-
-
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Kontakt oss</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <h1>Kontakt GameXchange</h1>
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> Spørsmål (annet) </label><br>
-    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-    <label for="vehicle2"> Jeg vil selge noe </label><br>
-    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-    <label for="vehicle3"> Jeg vil klage </label><br> 
-    Navn: <input type="text" name="navn"><br><br>
-    Epost: <input type="email"><br><br>
-    Melding:<br>
-    <textarea rows="4" cols="40"></textarea><br><br>
-</form>
-<div>Send</div>
-    <a style="margin-right: 10px" href="">Hjem (du er her)</a><a style="margin-right: 10px" href="høydepunkter.html">Høydepunkter</a><a style="margin-right: 10px" href="login.html">Kjøp</a><a style="margin-right: 10px" href="Ny kunde? Registrer her"></a><astyle="margin-right: 10px" href="omoss.htm1">Om oss og kontakt</a><a href="allproducts.html">Alle produkter</a>
+    <!-- Navbar At the top of the page  -->
+    <header>
+        <div class="navbar">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="nav-links">
+                <a href="../../index.html">Hjem</a>
+                <a href="høydepunkter.html">Høydepunkter</a>
+                <a href="login.html">Kjøp</a>
+                <a href="register.html">Ny kunde? Registrer her</a>
+                <a href="kontakt.html">Om oss og kontakt</a>
+                <a href="allproducts.html" class="bold">Alle produkter</a>
+                <div onclick="darkmode()">darkmode()</div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main content of the page -->
+    <main>
+        <h1>Kontakt GameXchange</h1>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Spørsmål (annet) </label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Jeg vil selge noe </label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Jeg vil klage </label>
+        Navn: <input type="text" name="navn">
+        Epost: <input type="email">
+        Melding:
+        <textarea rows="4" cols="40"></textarea><br><br>
+        </form>
+        <div>Send</div>
+    </main>
+    <script src="../../backend/script.js"></script>
 </body>
+
+</html>
+
+</head>

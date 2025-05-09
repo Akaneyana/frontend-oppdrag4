@@ -1,0 +1,26 @@
+.hero {
+    width: 85%;
+    height:auto; 
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hero-text {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    
+}
+
+#herobilde {
+    width: 71.5%; /* Adjust the width to 80% of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
